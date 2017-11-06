@@ -1,0 +1,22 @@
+server:
+  port: 80
+  context-path: /
+spring:
+  #MySQL≈‰÷√
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/infinity-blade-civilization
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+  #JPA
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  #thymeleaf
+  thymeleaf:
+    prefix: classpath:/templates
+    suffix: .html
+    mode: HTML5
+    encoding: UTF-8
+    cache: false
